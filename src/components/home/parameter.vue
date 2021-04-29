@@ -11,6 +11,7 @@
       </v-tab-item>
       <v-tab-item>
         <v-card>
+          <TableInput />
         </v-card>
       </v-tab-item>
     </v-tabs-items>
@@ -18,7 +19,12 @@
 </template>
 
 <script>
+import TableInput from "@/components/table/table-input.vue"
+
 export default {
+  components: {
+    TableInput 
+  },
   data() {
     return {
       tab: null,
